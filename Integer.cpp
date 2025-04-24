@@ -18,6 +18,10 @@
 #include <cmath>      // for std::abs
 #include <limits>     // for numeric_limits
 
+// Use unsigned char for digits 0-99
+using DigitType = unsigned char;
+const int BASE = 100;
+
 // ---------------------------------------------------------
 // normalize()
 // Remove leading zeros, ensure canonical zero form.
